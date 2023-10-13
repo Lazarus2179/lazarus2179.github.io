@@ -2,40 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="assets/css/portfolio.css">
+    <title>Portfolio - Micael Lázaro</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Font Awesome CDN - Font icon CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <h1>Welcome to my portfolio</h1>
-        <p>Here are some of my projects.</p>
-    </header>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-m"></i>
+                    <div class="logo-text">Micael Lázaro</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-    <!-- Navigation Menu -->
-   
- 
+            <h1>Welcome to my Portfolio</h1>
+            
+            <div class="project-links">
+                <ul>
+                    <li><a href="project1.html">Project 1</a></li>
+                    <li><a href="project2.html">Project 2</a></li>
+                    <li><a href="project3.html">Project 3</a></li>
+                    <li><a href="project4.html">Project 4</a></li>
+                </ul>
+            </div>
+        </div>
+     </div>
+</body>
+</html>
 
-    <!-- My Projects Section -->
-    <section id="projects">
-        <h2>My Projects</h2>
-        <nav>
-            <ul>
-                <li><a href="https://lazarus2179.github.io/Milestone-Project-1/">Project 1</a></li>
-                <li><a href="#projects">Project 2</a></li>
-            </ul>
-        </nav>
-        <nav>
-            <ul>
-                <li><a href="#projects">Project 3</a></li>
-                <li><a href="#projects">Project 4</a></li>
-            </ul>
-        </nav>
 
-    
-        <!-- You can add your project details and images here. -->
-    </section>
+            <h1>Welcome to my portfolio</h1>
+            <p>Here are some of my projects</p>
+            <div>
+                <a href="https://lazarus2179.github.io/Rosie/contact.html">Project 1</a>
+            </div>
 
+     </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","UX Designer","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+       <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 My Portfolio</p>
+    </footer>
 </body>
 </html>
