@@ -212,3 +212,10 @@ nav .navlinks li a{
         padding:40px 0px;
     }
 }
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
