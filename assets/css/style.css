@@ -119,9 +119,12 @@ nav .navlinks li a{
 .hero-text h1{
     color: #007ced;
     font-size: 3rem;
+    margin-bottom: 20px;
 }
 .hero-text p{
     color:#e5e5e5;
+
+
 
 }
 .btn-group{
