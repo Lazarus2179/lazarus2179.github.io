@@ -1,61 +1,118 @@
-/* Reset default styles */
 * {
-    margin: 30px;
-    padding: 0;
     box-sizing: border-box;
-}
-
-/* Basic page styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #333;
-    color: #007ced;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    font-family: poppins, sans-serif;
 }
 
-/* Style the resume container */
-.resume {
-    max-width: 800px;
+body {
+    overflow-x: hidden;
+}
+
+.hero-header {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: #222;
+}
+
+.wrapper {
+    width: 1280px;
+    max-width: 95%;
     margin: 0 auto;
-    background-color: #333;
-    padding: 20px;
-    border: 5px solid #007ced;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
 }
 
-/* Header styling */
 header {
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo i {
+    height: 45px;
+    width: 45px;
+    background-color: #007ced;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
     text-align: center;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #007ced;
+.logo .logo-text {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
 }
 
-header p {
-    font-size: 1.2rem;
+nav .togglebtn {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 45px;
+    right: 3%;
+    z-index: 5;
+    cursor: pointer;
+    display: none;
 }
 
-/* Section styling */
-section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: grey;
+nav .togglebtn span {
+    display: block;
+    background-color: #007ced;
+    margin: 5px 0px;
+    width: 100%;
+    height: 3px;
+    transition: 0.3s;
+    transition-property: transform, opacity;
 }
 
-section p {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+nav .navlinks {
+    list-style-type: none;
+}
+
+nav .navlinks li {
+    display: inline-block;
+}
+
+nav .navlinks li a {
+    color: #e5e5e5;
+    margin-right: 2.5rem;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 10px 0;
+    text-align: center;
+    color: white; 
+
+}
+
+h2 {
     color: white;
+    text-decoration: underline;
+    padding: 20px;
 }
 
-/* List styling */
-ul {
-    margin-left: 20px;
+p {
     color: white;
+    margin-bottom: 20px;
 }
 
-/* Add any additional styling or modifications as needed for your specific design preferences. */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
