@@ -142,7 +142,7 @@ h1 {
 
 
 
-p {
+.contact-content p {
     color: white;
     margin: 20px; /* Add space around the paragraph */
     border: 2px solid #007ced; /* Add a 2px solid border with the color #007ced */
@@ -154,4 +154,5 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
+  
 }
